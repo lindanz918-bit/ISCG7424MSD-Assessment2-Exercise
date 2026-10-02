@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179218110069",
+    "project_id": "iscg7424-assessment2-exercise",
+    "storage_bucket": "iscg7424-assessment2-exercise.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179218110069:android:90a3b4b73db405c457ca3c",
+        "android_client_info": {
+          "package_name": "cs.linda.iscg7424assessment2exercise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92M_JeIqdaLGaeAAqCoRCqBNplxMuu_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
