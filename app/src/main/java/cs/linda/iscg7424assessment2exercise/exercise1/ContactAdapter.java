@@ -3,7 +3,6 @@ package cs.linda.iscg7424assessment2exercise.exercise1;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,15 +28,15 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
      * Provide a reference to the type of views that you are using
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        EditText etFirstName, etLastName, etEmail, etPhone;
+        TextView tvFirstName, tvLastName, tvEmail, tvPhone;
 
         public ViewHolder(View view) {
             super(view);
             // Define click listener for the ViewHolder's View
-            etFirstName = view.findViewById(R.id.et_first_name);
-            etLastName = view.findViewById(R.id.et_last_name);
-            etEmail = view.findViewById(R.id.et_email);
-            etPhone = view.findViewById(R.id.et_phone);
+            tvFirstName = view.findViewById(R.id.tv_first_name);
+            tvLastName = view.findViewById(R.id.tv_last_name);
+            tvEmail = view.findViewById(R.id.tv_email);
+            tvPhone = view.findViewById(R.id.tv_phone);
         }
     }
 
@@ -60,10 +59,10 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Contact contact = contactsList.get(position);
         if (contact != null) {
-            holder.etFirstName.setText("First Name: " + contact.getFirst());
-            holder.etLastName.setText("Last Name: " + contact.getLast());
-            holder.etEmail.setText("Email: " + contact.getEmail());
-            holder.etPhone.setText("Phone: " + contact.getPhone());
+            holder.tvFirstName.setText("First Name: " + contact.getFirst());
+            holder.tvLastName.setText("Last Name: " + contact.getLast());
+            holder.tvEmail.setText("Email: " + contact.getEmail());
+            holder.tvPhone.setText("Phone: " + contact.getPhone());
 
             holder.itemView.setOnClickListener(v -> {
                 if (listener != null) {
